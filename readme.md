@@ -90,8 +90,8 @@ El servidor enviará una respuesta con el encabezado Set-Cookie:
 
 ### Tools 
 https://regex101.com/  
-https://jsonpath.com/
-https://htmlboilerplates.com/  
+https://jsonpath.com/  
+https://htmlboilerplates.com/   
 
 
 *Este resumen fue generado por ChatGPT en base a una conversación interactiva. HC. abril, 2025*
