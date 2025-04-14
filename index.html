@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Web Storage</title>
+	<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h3>HTML Web Storage-Cookies</h3>
+		<div class="side-by-side">
+			<div class="column left">
+				<div style="display: inline-flex;">
+					<p class="p-title">Cookie (4096 Bytes)</p>
+					<button data-accion="query01" class="button-chico">QUERY </button>
+
+				</div>
+				<div>
+					<button data-accion="update01">New/Update</button>
+				</div>
+				<input type="text" id="input-01" autocomplete="off">
+				<pre style="font-family: monospace;">Examples:<br>delete: demo=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;<br>object: {"name": "bob", "country":"argentina", "age": 23}
+				</pre>
+				<p id="dummy-space-01" class="mensa-temporal p-dummy-space">&nbsp;</p>								
+				<p id="p-mensaje-01" class="mensa-temporal">&nbsp;</p>
+			</div>
+			<div class="column right">
+				<div style="display: inline-flex;">
+					<p>Output</p>
+					<button data-accion="dateNow01" class="button-chico">NOW()</button>
+					<button data-accion="funcionStringify01" class="button-chico">STRINGIFY</button> 
+					<button data-accion="funcionParse01" class="button-chico">PARSE</button> 
+
+					
+					<button data-accion="clear01" class="button-chico">CLEAR</button> 
+				</div>
+				<textarea id="textarea-01"></textarea>
+			</div>
+		</div>
+
+
+
+		<div class="side-by-side" style="margin-top: 20px;">
+			<div class="column left">
+				<div style="display: inline-flex;">
+					<p class="p-title">Session (5 MB)</p>
+					<button data-accion="query02" class="button-chico">QUERY </button>
+
+				</div> <br>
+				<div style="display: inline-flex;">
+					<button data-accion="update02">New/Update</button>
+					<button data-accion="delete02">Delete</button>
+					<button data-accion="deleteAll02">Delete all</button>
+				</div>
+				<input type="text" id="input-02" autocomplete="off">
+				<pre style="font-family: monospace;">Examples:<br>delete: "key" (usar boton borrar con el valor de la key)<br>new: "key", "value"<br>modify: "key", "value2"<br>object: {"name": "bob", "country":"argentina", "age": 23}
+				</pre>
+				<p id="dummy-space-02" class="mensa-temporal p-dummy-space">&nbsp;</p>								
+				<p id="p-mensaje-02" class="mensa-temporal">&nbsp;</p>
+			</div>
+			<div class="column right">
+				<div style="display: inline-flex;">
+					<p>Output</p>
+					<button data-accion="dateNow02" class="button-chico">NOW()</button>
+					<button data-accion="funcionStringify02" class="button-chico">STRINGIFY</button> 
+					<button data-accion="funcionParse02" class="button-chico">PARSE</button> 
+
+					
+					<button data-accion="clear02" class="button-chico">CLEAR</button> 
+				</div>
+				<textarea id="textarea-02"></textarea>
+			</div>
+		</div>
+
+
+		<!-- 03 -->
+		<div class="side-by-side" style="margin-top: 20px;">
+			<div class="column left">
+				<div style="display: inline-flex;">
+					<p class="p-title">Storage (5 MB)</p>
+					<button data-accion="query03" class="button-chico">QUERY </button>
+
+				</div> <br>
+				<div style="display: inline-flex;">
+					<button data-accion="update03">New/Update</button>
+					<button data-accion="delete03">Delete</button>
+					<button data-accion="deleteAll03">Delete all</button>
+				</div>
+				<input type="text" id="input-03" autocomplete="off">
+				<pre style="font-family: monospace;">Examples:<br>delete: "key" (usar boton borrar con el valor de la key)<br>new: "key", "value"<br>modify: "key", "value2"<br>object: {"name": "bob", "country":"argentina", "age": 23}
+				</pre>
+				<p id="dummy-space-03" class="mensa-temporal p-dummy-space">&nbsp;</p>								
+				<p id="p-mensaje-03" class="mensa-temporal">&nbsp;</p>
+			</div>
+			<div class="column right">
+				<div style="display: inline-flex;">
+					<p>Output</p>
+					<button data-accion="dateNow03" class="button-chico">NOW()</button>
+					<button data-accion="funcionStringify03" class="button-chico">STRINGIFY</button> 
+					<button data-accion="funcionParse03" class="button-chico">PARSE</button> 
+
+					
+					<button data-accion="clear03" class="button-chico">CLEAR</button> 
+				</div>
+				<textarea id="textarea-03"></textarea>
+			</div>
+		</div>
+
+
+	</div>
+
+	<footer style="text-align: center; padding: 1em 0;">
+		<p><em>&copy; HC, 2025</em></p>
+	  </footer>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
