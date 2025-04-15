@@ -88,10 +88,31 @@ El servidor enviará una respuesta con el encabezado Set-Cookie:
 	Content-Type: text/html; charset=UTF-8
 ```
 
+### HTML5 Data Attributes
+Almacenan información adicional sin saturar el HTML. Se pueden añadir datos a los  elementos HTML que puedan ser utilizados por JavaScript, CSS o incluso simplemente para darle más significado al HTML
+
+**Ejemplo**  
+```html 
+<div data-user-id="12345" data-role="admin">User Info</div>
+```
+Acceder a los datos:
+```js 
+let userInfo = document.querySelector('div[data-user-id]');
+
+// Access the data attribute
+let userId = userInfo.getAttribute('data-user-id');
+console.log(userId); // Output: 12345
+```
+
+
+
+
+
 ### Tools 
 https://regex101.com/  
 https://jsonpath.com/  
 https://htmlboilerplates.com/   
+
 
 
 *Este resumen fue generado por ChatGPT en base a una conversación interactiva. HC. abril, 2025*
